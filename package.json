@@ -1,0 +1,35 @@
+{
+  "name": "krishiroute-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "train:ml": "python scripts/train-ml-models.py",
+    "prepare:data": "node scripts/prepare-data.mjs",
+    "dev:api": "node server/ai-server.mjs",
+    "serve:ai": "npm run build && node server/ai-server.mjs",
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "clsx": "^2.1.1",
+    "csv-parse": "^5.6.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "framer-motion": "^12.40.0",
+    "lucide-react": "^0.468.0",
+    "openai": "^6.38.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^3.8.1",
+    "vite": "^6.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.57",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "typescript": "^5.8.3"
+  }
+}
